@@ -1,4 +1,4 @@
-require! {express, http, path, socket: 'socket.io', './host-config'}
+require! {express, http, path, 'socket.io', './host-config'}
 
 get-random-key = -> '' + Date.now! + Math.random!
 
@@ -117,7 +117,8 @@ io.on 'connection', (socket)!->
     console.log "update info-bar-data, users-on-page: #{users-on-page}" 
     socket.broadcast.to url .emit 'updated-info-bar-data', {url, new-value}
 
-server.listen host-config.end-server.port
+
+server.listen host-config.end-server.port, !-> console.log 'listen', host-config.end-server.port
 
 # exports = module.exports = server
 # exports.use = -> app.use.apply app, &  

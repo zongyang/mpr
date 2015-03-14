@@ -22,12 +22,12 @@ host =
   is-reverse-proxy: false   # host是否通过反向代理出去
   scheme: "http"            # 协议 http | https | both
   name: "localhost"   # ip | 域名，使用反向代理时，为公网可见ip或域名
-  port: 8888                 # 端口，可缺省（http为80，https为443）
+  port: 3000                 # 端口，可缺省（http为80，https为443）
   path: "."                 # 路径。通常不用，反向代理时，如果没有独立域名，则需要使用。注意，可能会有比较多问题。
-  livereload: 8081          # 端口号 | false （不使用）。开发时（非反向代理时使用），反向代理时为false
+  livereload: 3001          # 端口号 | false （不使用）。开发时（非反向代理时使用），反向代理时为false
   end-server:               # 真正的data-server
     port: 8888
-    url: 'http://localhost:8888'              
+    url: 'http://localhost:3000'              
 
   lbs:
     provider: 'baidu'

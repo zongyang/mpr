@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='../semantic/semantic.css')
+    link(rel='stylesheet', href='mpr-1.0.0.css')
+    script(src='../semantic/jquery.js')
+    script(src='../semantic/semantic.js')
+    script(src='../socket.io/socket.io.js') 
+    script(src='../vendor/requirejs/require.js', data-main='index.js')
+  body
+    //p this is indexs src
+    .main
+     include widgets/take-photo/take-photo.jade
+    include widgets/analysis/analysis.jade
+     include widgets/analysis/analysis.jade

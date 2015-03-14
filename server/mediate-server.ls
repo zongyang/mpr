@@ -1,4 +1,4 @@
-require! {express, http, path , multer, fs, socket: 'socket.io', './host-config', 'cookie-parser'}
+require! {express, http, path , multer, fs, 'socket.io', './host-config', 'cookie-parser'}
 
 end-server-url = host-config.end-server.url 
 

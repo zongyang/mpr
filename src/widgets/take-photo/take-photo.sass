@@ -1,0 +1,29 @@
+@import base
+
+#take-photo.show
+	display: block
+
+#take-photo
+	display: none
+	+size()
+	&>div  
+		margin-top: 30px
+	.title 
+		p
+			color: $green
+			font-family: $main-font
+			font-size: 23px
+			text-align: center
+	.camera
+
+		text-align: center
+		.back-input
+			margin-top: -62px
+			input
+				width: 62px
+				height: 62px
+				cursor: pointer
+				opacity: 0
+	.note
+		text-align: center
+
