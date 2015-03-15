@@ -1,0 +1,52 @@
+@import base
+#share.show
+	display: block
+#share
+	+size(350px,auto)
+	margin: 0 auto
+	display: none
+	.head
+		background: $green
+		position: relative
+		.title 
+			font-size: 16px
+			color: white
+			line-height: 40px
+			margin-left: 10px
+		.remove
+			position: absolute
+			right: 10px
+			line-height: 40px
+			cursor: pointer
+	.main
+		margin: 10px 0 10px 0
+		.tag-and-img
+			.left
+				float: left
+				.my
+					font-size: 16px
+					color: $green
+				.shop-name
+					font-weight: bold
+					font-size: 16px
+			.right
+				float: right
+				.shop-img
+					+size(55px,55px)
+					border-radius: 50%
+			.clear
+				clear: both
+		p.address
+			margin-top: 15px 
+			color: rgba(0,0,0,.5)
+			font-size: 14px
+		.footer
+			ul
+				li 
+					display: inline
+					cursor: pointer
+					img
+						+size(40px,40px)
+
+
+

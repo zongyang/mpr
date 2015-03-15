@@ -3,10 +3,18 @@ define (require, exports, module) ->
 
   ui.create-widget {
     name:'take-photo'
-
     states-app-pages-map: {'show': <[take-photo]>}
-
+    camera-file-input:$ '#take-photo .back-input input'
+    up-photo:$ '#up-photo .selected-file'
     activate:!->
-       console.log('activate test')
+       @add-up-btn-evet!
+
+    add-up-btn-evet:!->
+       @camera-file-input[0].onchange =!~>
+            file=@camera-file-input[0].files[0]
+            reader=new File-Reader!
+            reader.read-as-data-URL file
+            reader.onload= !~>
+                @up-photo[0].src=reader.result
   }
     

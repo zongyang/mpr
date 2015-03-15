@@ -8,5 +8,8 @@ define (require, exports, module) ->
   pages: <[take-photo analysis]>
   
   transitions:
-    'take-photo     ->  analysis'         : 'click'           : hot-area : ($ '#take-photo button'),  action: !~> console.log('photo click')
-    'analysis       ->  take-photo'       : 'click'           : hot-area : ($ '#analysis button'), action: !~> console.log('ana click')
+    'take-photo     ->  up-photo'         : 'click'           : hot-area : ($ '#take-photo button'),  action: !~> console.log('photo click')
+    'analysis       ->  take-photo'       : 'click'           : hot-area : ($ '#analysis .footer .button.again'), action: !~> console.log('ana click')
+    'analysis       ->  share'            : 'click'           : hot-area : ($ '#analysis .button.share'), action: !~> console.log('ana click')
+    'share          ->  analysis'         : 'click'           :hot-area  : ($ '#share .head .remove'),action:!->
+    #'a -> b': '@+:take-photo': action: !->

@@ -1,4 +1,46 @@
+@import base
+
+
 #analysis.show
 	display: block
 #analysis
 	display: none
+	+size()
+	//background: url('assets/images/测试.jpg')
+	.main-img
+		width: 300px
+		margin: 20px auto 0 auto
+	/*.sel-img
+		margin: 20px auto 0 auto
+		width: 300px
+		.card
+			cursor: pointer
+			.content
+				text-align: center*/
+	.sel-img
+		margin: 20px auto 0 auto
+		width: 300px
+		text-align: center
+		&>span
+			display: inline-block
+			width: 60px
+			height: 60px
+			border: 2px solid white
+			margin: 0 20px 0 20px
+			line-height: 60px
+			&.selected
+				border-color: $yellow
+
+	.footer
+		width: 300px
+		margin: auto
+		.buttons
+			margin: 20px auto 20px auto
+			width: 100%
+			.button
+				width: 49%
+			.or 
+				width: 2%
+
+	.hidden
+		display: none

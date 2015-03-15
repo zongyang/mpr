@@ -49,23 +49,26 @@ if require.config
 define (require, exports, module) ->
   require! <[ jquery state state/state-machine middle-wares common/ui app-spec 
               widgets/take-photo/take-photo
+              widgets/up-photo/up-photo
               widgets/analysis/analysis
+              widgets/share/share
             ]>
 
   start-app-state-machine = !->
     console.log('start-app-state-machine')
     app-state-machine = new state-machine "app-page": app-spec.pages 
     app-state-machine.add-transitions spec: app-spec.transitions
-    app-state-machine.start  'take-photo'
+    app-state-machine.start  'analysis'
 
   observe-app-state =!->
     state.app-page.observe (page)!~>
       #$ '#'+page .add-class 'show'
       
   activate-widgets =!->
-    console.log('activate-widgets')
     take-photo.activate!
     analysis.activate!
+    up-photo.activate!
+    share.activate!
     #splash.activate!
     #top-bar.activate!
     # notification.activate!
