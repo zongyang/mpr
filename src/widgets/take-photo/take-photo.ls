@@ -16,5 +16,9 @@ define (require, exports, module) ->
             reader.read-as-data-URL file
             reader.onload= !~>
                 @up-photo[0].src=reader.result
+                state.select-finish true
+                set-timeout !->
+                    state.up-photo-finish true
+                ,3000  
   }
     

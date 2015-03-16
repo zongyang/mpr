@@ -55,10 +55,11 @@ define (require, exports, module) ->
             ]>
 
   start-app-state-machine = !->
-    console.log('start-app-state-machine')
+    app-spec.add-states!
     app-state-machine = new state-machine "app-page": app-spec.pages 
     app-state-machine.add-transitions spec: app-spec.transitions
-    app-state-machine.start  'analysis'
+    app-state-machine.start  'take-photo'
+    
 
   observe-app-state =!->
     state.app-page.observe (page)!~>

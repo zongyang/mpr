@@ -4,7 +4,9 @@ define (require, exports, module) ->
   ui.create-widget {
     name:'up-photo'
     states-app-pages-map: {'show': <[up-photo]>}
+
     activate:!->
-       console.log('up-photo test')
+   
+       
   }
     
