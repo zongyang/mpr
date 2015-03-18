@@ -6,7 +6,6 @@ define (require, exports, module) ->
     states-app-pages-map: {'show': <[up-photo]>}
 
     activate:!->
-   
-       
+      
   }
     

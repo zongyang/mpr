@@ -7,32 +7,32 @@
 	display: none
 	+size()
 	//background: url('assets/images/测试.jpg')
+	&>div
+		width: 300px
 	.main-img
-		width: 300px
 		margin: 5% auto 0 auto
-	/*.sel-img
-		margin: 20px auto 0 auto
-		width: 300px
-		.card
-			cursor: pointer
-			.content
-				text-align: center*/
 	.sel-img
 		margin: 20px auto 0 auto
-		width: 300px
 		text-align: center
+		position: relative
 		&>span
 			display: inline-block
 			width: 60px
 			height: 60px
 			border: 2px solid white
-			margin: 0 20px 0 20px
 			line-height: 60px
+			font-weight: bold
+			font-size: 14px
 			&.selected
 				border-color: $yellow
+			&:nth-child(1)
+				position: absolute
+				left: 0
+			&:nth-child(3)
+				position:absolute
+				right: 0
 
 	.footer
-		width: 300px
 		margin: auto
 		.buttons
 			margin: 20px auto 20px auto

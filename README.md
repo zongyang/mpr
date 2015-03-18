@@ -12,6 +12,6 @@ Mall Position Recognizer
 ------------
 配置文件：server/host-config.ls
 默认端口：3000
-地址：
+默认地址：loaclhost
 
 

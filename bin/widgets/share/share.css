@@ -2,48 +2,51 @@
   display: block; }
 
 #share {
-  width: 350px;
+  width: 600px;
   height: auto;
   margin: 10% auto 10% auto;
   display: none; }
-  #share .head {
-    background: #66c17b;
-    position: relative; }
-    #share .head .title {
-      font-size: 16px;
-      color: white;
-      line-height: 40px;
-      margin-left: 10px; }
-    #share .head .remove {
-      position: absolute;
-      right: 10px;
-      line-height: 40px;
-      cursor: pointer; }
-  #share .main {
-    margin: 10px 0 10px 0; }
-    #share .main .tag-and-img .left {
-      float: left; }
-      #share .main .tag-and-img .left .my {
+  #share .card.main {
+    width: 100%; }
+    #share .card.main > div {
+      padding: 0 5% 0 5%; }
+    #share .card.main .head {
+      background: #66c17b;
+      position: relative; }
+      #share .card.main .head .title {
         font-size: 16px;
-        color: #66c17b; }
-      #share .main .tag-and-img .left .shop-name {
-        font-weight: bold;
-        font-size: 16px; }
-    #share .main .tag-and-img .right {
-      float: right; }
-      #share .main .tag-and-img .right .shop-img {
-        width: 55px;
-        height: 55px;
-        border-radius: 50%; }
-    #share .main .tag-and-img .clear {
-      clear: both; }
-    #share .main p.address {
-      margin-top: 15px;
-      color: rgba(0, 0, 0, 0.5);
-      font-size: 14px; }
-    #share .main .footer ul li {
+        color: white;
+        line-height: 40px; }
+      #share .card.main .head .remove {
+        position: absolute;
+        right: 5%;
+        line-height: 40px;
+        cursor: pointer; }
+    #share .card.main .content {
+      margin-top: 10px; }
+      #share .card.main .content .tag-and-img .left {
+        float: left; }
+        #share .card.main .content .tag-and-img .left .my {
+          font-size: 16px;
+          color: #66c17b; }
+        #share .card.main .content .tag-and-img .left .shop-name {
+          font-weight: bold;
+          font-size: 16px; }
+      #share .card.main .content .tag-and-img .right {
+        float: right; }
+        #share .card.main .content .tag-and-img .right .shop-img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%; }
+      #share .card.main .content .tag-and-img .clear {
+        clear: both; }
+      #share .card.main .content p.address {
+        margin-top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px; }
+    #share .card.main .footer ul li {
       display: inline;
       cursor: pointer; }
-      #share .main .footer ul li img {
+      #share .card.main .footer ul li img {
         width: 40px;
         height: 40px; }

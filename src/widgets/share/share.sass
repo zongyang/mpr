@@ -2,44 +2,47 @@
 #share.show
 	display: block
 #share
-	+size(350px,auto)
+	+size(600px,auto)
 	margin: 10% auto 10% auto
 	display: none
-	.head
-		background: $green
-		position: relative
-		.title 
-			font-size: 16px
-			color: white
-			line-height: 40px
-			margin-left: 10px
-		.remove
-			position: absolute
-			right: 10px
-			line-height: 40px
-			cursor: pointer
-	.main
-		margin: 10px 0 10px 0
-		.tag-and-img
-			.left
-				float: left
-				.my
-					font-size: 16px
-					color: $green
-				.shop-name
-					font-weight: bold
-					font-size: 16px
-			.right
-				float: right
-				.shop-img
-					+size(55px,55px)
-					border-radius: 50%
-			.clear
-				clear: both
-		p.address
-			margin-top: 15px 
-			color: rgba(0,0,0,.5)
-			font-size: 14px
+	.card.main
+		width: 100%
+		&>div
+			padding: 0 5% 0 5%
+		.head
+			background: $green
+			position: relative
+			.title 
+				font-size: 16px
+				color: white
+				line-height: 40px
+			.remove
+				position: absolute
+				right: 5%
+				line-height: 40px
+				cursor: pointer
+		.content
+			margin-top: 10px
+			.tag-and-img
+				.left
+					float: left
+					.my
+						font-size: 16px
+						color: $green
+					.shop-name
+						font-weight: bold
+						font-size: 16px
+				.right
+					float: right
+					.shop-img
+						+size(60px,60px)
+						border-radius: 50%
+				.clear
+					clear: both
+			p.address
+				margin-top: 15px 
+				color: rgba(0,0,0,.5)
+				font-size: 14px
 		.footer
 			ul
 				li 

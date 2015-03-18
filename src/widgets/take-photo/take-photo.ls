@@ -17,6 +17,8 @@ define (require, exports, module) ->
             reader.onload= !~>
                 @up-photo[0].src=reader.result
                 state.select-finish true
+                
+                #提交到服务器
                 set-timeout !->
                     state.up-photo-finish true
                 ,3000  
