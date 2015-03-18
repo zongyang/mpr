@@ -8,6 +8,10 @@ Mall Position Recognizer
 2.grunt 
 3.grunt watch
 
-端口
+地址及端口
 ------------
-3000
+配置文件：server/host-config.ls
+默认端口：3000
+地址：
+
+

@@ -1,0 +1,75 @@
+@keyframes selected-file-anim {
+  0% {
+    width: 100%;
+    height: 100%; }
+
+  50% {
+    width: 140%;
+    height: 140%; }
+
+  100% {
+    width: 100%;
+    height: 100%; } }
+
+@-moz-keyframes selected-file-anim {
+  0% {
+    width: 100%;
+    height: 100%; }
+
+  50% {
+    width: 140%;
+    height: 140%; }
+
+  100% {
+    width: 100%;
+    height: 100%; } }
+
+@-webkit-keyframes selected-file-anim {
+  0% {
+    width: 100%;
+    height: 100%; }
+
+  50% {
+    width: 140%;
+    height: 140%; }
+
+  100% {
+    width: 100%;
+    height: 100%; } }
+
+@-o-keyframes selected-file-anim {
+  0% {
+    width: 100%;
+    height: 100%; }
+
+  50% {
+    width: 140%;
+    height: 140%; }
+
+  100% {
+    width: 100%;
+    height: 100%; } }
+
+#up-photo.show {
+  display: block; }
+
+#up-photo {
+  display: none;
+  width: 100%;
+  height: 100%; }
+  #up-photo .selected-file {
+    animation: selected-file-anim 10s;
+    -moz-animation: selected-file-anim 10s;
+    /* Firefox */
+    -webkit-animation: selected-file-anim 10s;
+    /* Safari and Chrome */
+    -o-animation: selected-file-anim 10s;
+    /* Opera */
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -o-animation-timing-function: linear; }

@@ -43,11 +43,12 @@ if require.config
         main: 'data-spec.js'
         location: '.'
       }
+
     ]
   } 
 
 define (require, exports, module) ->
-  require! <[ jquery state state/state-machine middle-wares common/ui app-spec 
+  require!  <[ jquery state state/state-machine middle-wares common/ui app-spec
               widgets/take-photo/take-photo
               widgets/up-photo/up-photo
               widgets/analysis/analysis

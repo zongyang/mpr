@@ -1,0 +1,30 @@
+#take-photo.show {
+  display: block; }
+
+#take-photo {
+  display: none;
+  width: 100%;
+  height: 100%; }
+  #take-photo .card {
+    width: 300px;
+    margin: 10% auto 10%; }
+    #take-photo .card .title {
+      height: 60px; }
+      #take-photo .card .title p {
+        line-height: 60px;
+        color: #66c17b;
+        font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        text-align: center; }
+    #take-photo .card .camera {
+      text-align: center; }
+      #take-photo .card .camera .back-input {
+        margin-top: -62px; }
+        #take-photo .card .camera .back-input input {
+          width: 62px;
+          height: 62px;
+          cursor: pointer;
+          opacity: 0; }
+    #take-photo .card .note {
+      text-align: center;
+      padding-bottom: 20px; }
