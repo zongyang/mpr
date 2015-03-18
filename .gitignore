@@ -1,5 +1,6 @@
 *.sw*
 *~
+bin/
 dist/
 node_modules/
 .temp/
