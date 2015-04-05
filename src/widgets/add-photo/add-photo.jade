@@ -1,0 +1,28 @@
+#add-photo
+	.ui.segment.body
+		.scan-seg.ui.three.column.grid
+			//.column
+				.ui.image
+					a.ui.left.green.corner.label
+						i.checkmark.icon
+					img(src='assets/images/测试.jpg')
+			//.column
+				.ui.image
+					a.ui.left.corner.label
+						i.checkmark.icon
+					img(src='assets/images/测试.jpg')
+			//.column
+				.ui.image
+					a.ui.left.corner.label
+						i.checkmark.icon
+					img(src='assets/images/测试.jpg')
+		
+		.progress-seg.ui.indicating.progress(data-value='1',data-tatal='20')
+			.bar
+				.progress
+		.upload-seg
+			.ui.button.green.sel 选择图片
+			.ui.button.green.up 上传图片
+			.back-input 
+				input(type="file",multiple,required,accpet='image/*')
+			.clear

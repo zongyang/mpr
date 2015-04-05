@@ -75,6 +75,7 @@ module.exports = (grunt) ->
           "!bin/vendor/**/*.css"
           "!bin/tests/**/*.css"
           "!bin/**/debug.css"
+          #"bin/vendor/semantic-ui/**/*.css"
         ]
         dest: "bin/<%= pkg.name %>-<%= pkg.version %>.css"
 

@@ -2,7 +2,7 @@
 define (require, exports, module) ->
   require! ['jquery', state, 'common/ui']
 
-  pages: <[take-photo analysis]>
+  pages: <[take-photo analysis share up-photo add-photo]>
 
   add-states:!->
     state.add 'select-finish' : [true false]

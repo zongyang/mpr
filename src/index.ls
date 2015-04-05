@@ -42,24 +42,29 @@ if require.config
         name: 'all-data'
         main: 'data-spec.js'
         location: '.'
+      },
+      {
+        name: 'semantic-ui' 
+        main: 'semantic.js'       
+        location: '../vendor/semantic-ui/dist'
       }
-
     ]
   } 
 
 define (require, exports, module) ->
-  require!  <[ jquery state state/state-machine middle-wares common/ui app-spec
+  require!  <[ jquery  semantic-ui state state/state-machine middle-wares common/ui app-spec
               widgets/take-photo/take-photo
               widgets/up-photo/up-photo
               widgets/analysis/analysis
               widgets/share/share
+              widgets/add-photo/add-photo 
             ]>
 
   start-app-state-machine = !->
     app-spec.add-states!
     app-state-machine = new state-machine "app-page": app-spec.pages 
     app-state-machine.add-transitions spec: app-spec.transitions
-    app-state-machine.start  'take-photo'
+    app-state-machine.start 'add-photo'
     
 
   observe-app-state =!->
@@ -71,6 +76,7 @@ define (require, exports, module) ->
     analysis.activate!
     up-photo.activate!
     share.activate!
+    add-photo.activate!
     #splash.activate!
     #top-bar.activate!
     # notification.activate!

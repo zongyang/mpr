@@ -10,7 +10,8 @@
     "a-plus": "git@222.200.181.218:rc-front/a-plus.git",
     "pulltorefresh": "~2.0.8",
     "modernizr": "~2.8.3",
-    "hammerjs": "~2.0.4"
+    "hammerjs": "~2.0.4",
+    "semantic-ui": "~1.11.4"
   },
   "resolutions": {
     "hammerjs": "v1.0.10"

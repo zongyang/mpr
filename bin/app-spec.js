@@ -6,7 +6,7 @@
     state = require('state');
     ui = require('common/ui');
     return {
-      pages: ['take-photo', 'analysis'],
+      pages: ['take-photo', 'analysis', 'share', 'up-photo', 'add-photo'],
       addStates: function(){
         state.add({
           'select-finish': [true, false]

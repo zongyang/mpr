@@ -45,6 +45,226 @@
           location: '.'
         },
         {
+          name: 'semantic-ui',
+          main: 'semantic.js',
+          location: '../vendor/semantic-ui/dist'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
           name: 'a-plus',
           main: 'ui.js',
           location: 'vendor/a-plus/bin'
@@ -57,13 +277,15 @@
         hammerjs: 'vendor/hammerjs/hammer',
         'jquery.cookie': 'vendor/jquery.cookie/jquery.cookie',
         modernizr: 'vendor/modernizr/modernizr',
-        pulltorefresh: 'vendor/pulltorefresh/jquery.p2r.min'
+        pulltorefresh: 'vendor/pulltorefresh/jquery.p2r.min',
+        'semantic-ui': 'vendor/semantic-ui/dist/semantic'
       }
     });
   }
   define(function(require, exports, module){
-    var jquery, state, stateMachine, middleWares, ui, appSpec, takePhoto, upPhoto, analysis, share, startAppStateMachine, observeAppState, activateWidgets;
+    var jquery, semanticUi, state, stateMachine, middleWares, ui, appSpec, takePhoto, upPhoto, analysis, share, addPhoto, startAppStateMachine, observeAppState, activateWidgets;
     jquery = require('jquery');
+    semanticUi = require('semantic-ui');
     state = require('state');
     stateMachine = require('state/state-machine');
     middleWares = require('middle-wares');
@@ -73,6 +295,7 @@
     upPhoto = require('widgets/up-photo/up-photo');
     analysis = require('widgets/analysis/analysis');
     share = require('widgets/share/share');
+    addPhoto = require('widgets/add-photo/add-photo');
     startAppStateMachine = function(){
       var appStateMachine;
       appSpec.addStates();
@@ -82,7 +305,7 @@
       appStateMachine.addTransitions({
         spec: appSpec.transitions
       });
-      appStateMachine.start('take-photo');
+      appStateMachine.start('add-photo');
     };
     observeAppState = function(){
       var this$ = this;
@@ -93,6 +316,7 @@
       analysis.activate();
       upPhoto.activate();
       share.activate();
+      addPhoto.activate();
     };
     return middleWares.activate(function(){
       console.log("\n\n*************** at-plus activated! ***************\n\n");
