@@ -5,10 +5,15 @@ define (require, exports, module) ->
     name:'add-photo'
     file-input: $ '#add-photo .back-input input'
     scan-seg: $ '#add-photo .scan-seg'
+    up-btn: $ '#add-photo .upload-seg .up'
+    mall-input: $ '#add-photo .address-seg .mall'
+    shop-input: $ '#add-photo .address-seg .shop'
+    address-input: $ '#add-photo .address-seg .address'
     states-app-pages-map: {'show': <[add-photo]>}
 
     activate:!->
        @add-inputfile-event!
+       @add-up-btn-event!
 
     create-img-column:(src)->
         html='<div class="column">'
@@ -49,7 +54,22 @@ define (require, exports, module) ->
                     return console.log '第'+i+'个文件不是图片！'
                 @readAsDataURL files[i] 
 
+    add-up-btn-event:!->
+        @up-btn.click !~>
+            files=@file-input[0].files
+            data=new FormData!
 
+            for i from 0 to files.length-1
+                data.append files[i].name,files[i]
+
+            $.ajax do
+                type: 'post'
+                url: '/add-photo/uploads'
+                data: data
+                processData:false #告诉jquery不要去处理发送的数据
+                contentType:false #告诉jquery不需要设置Content-type请求头
+                success: (data)!->
+                    console.log data
   }
     
 

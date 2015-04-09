@@ -54,7 +54,7 @@ module.exports = (grunt) ->
         ]
       server_files:
         files: [
-          src: ["*.jade"]
+          src: ["*.jade","**/*.js"]
           dest: "bin/"
           cwd: "server/"
           expand: true
@@ -229,7 +229,7 @@ module.exports = (grunt) ->
         ]
 
       server_files:
-        files: ["server/*.jade"]
+        files: ["server/*.jade","server/**/*.js"]
         tasks: [
           "newer:copy:server_files"
         ]
@@ -252,7 +252,7 @@ module.exports = (grunt) ->
   grunt.registerTask "watch", [
     "build"
     # "karma:unit"
-    "express"
+    #"express"
     "delta"
   ]
   grunt.registerTask "default", [

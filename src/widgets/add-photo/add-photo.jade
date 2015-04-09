@@ -16,8 +16,18 @@
 					a.ui.left.corner.label
 						i.checkmark.icon
 					img(src='assets/images/测试.jpg')
-		
-		.progress-seg.ui.indicating.progress(data-value='1',data-tatal='20')
+		.address-seg.ui.form
+			.two.fields
+				.field
+					input(class='mall',type='text',placeholder='商场')
+				.field
+					input(class='shop' type='text',placeholder='店名')
+			.field
+				input(class='address',type='text',placeholder='位置')
+
+
+		.progress-seg.hidden
+			.ui.indicating.progress(data-value='1',data-tatal='20')
 			.bar
 				.progress
 		.upload-seg
