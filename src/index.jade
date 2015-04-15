@@ -1,3 +1,14 @@
+mixin modal()
+    .ui.small.modal
+        i.close.icon
+        .header
+            p
+        .content
+            p
+        .actions
+            .ui.positive.button 确定
+            .ui.negative.button 取消 
+
 doctype html
 html
   head
@@ -6,6 +17,7 @@ html
     script(src='../socket.io/socket.io.js') 
     script(src='../vendor/requirejs/require.js', data-main='index.js')
   body
+    +modal()
     //p this is indexs src
     .main
      include widgets/take-photo/take-photo.jade
@@ -13,3 +25,5 @@ html
      include widgets/analysis/analysis.jade
      include widgets/share/share.jade
      include widgets/add-photo/add-photo.jade
+
+

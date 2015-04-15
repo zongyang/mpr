@@ -14,4 +14,10 @@ Mall Position Recognizer
 默认端口：3000
 默认地址：loaclhost
 
+-----------
+mongodb的启动时记得试着dbpath
+./mongod --dbpath /Users/zongyang/mogodb/data/db
 
+-----------
+others
+lsc -co bin/ server/host-config.ls

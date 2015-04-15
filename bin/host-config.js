@@ -10,12 +10,16 @@
     path: ".",
     livereload: 3001,
     endServer: {
-      port: 8888,
       url: 'http://localhost:3000'
     },
     lbs: {
       provider: 'baidu',
       ak: 'tQCo5P8GsGsAHyPF5qAzIWYp'
+    },
+    db: {
+      name: 'mpr',
+      host: 'localhost',
+      port: 27017
     }
   };
   host.origin = host.scheme + '://' + host.name + (host.port ? ":" + host.port : '') + (host.path ? "/" + host.path : '');

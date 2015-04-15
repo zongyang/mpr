@@ -27,13 +27,18 @@ host =
   path: "."                 # 路径。通常不用，反向代理时，如果没有独立域名，则需要使用。注意，可能会有比较多问题。
   livereload: 3001          # 端口号 | false （不使用）。开发时（非反向代理时使用），反向代理时为false
   end-server:               # 真正的data-server
-    port: 8888
-    #url: 'http://192.168.1.101:3000'
+    #port: 8888
+    #url: 'http://192.168.253.2:3000'
     url: 'http://localhost:3000'             
 
   lbs:
     provider: 'baidu'
-    ak: 'tQCo5P8GsGsAHyPF5qAzIWYp'            
+    ak: 'tQCo5P8GsGsAHyPF5qAzIWYp' 
+  db:
+    name:'mpr'
+    host:'localhost'
+    port:27017
+
 
 host.origin = host.scheme + '://' + host.name + (if host.port then ":" + host.port else '') + (if host.path then "/" + host.path else '')
 host.port = 80 if not host.port

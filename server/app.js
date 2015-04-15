@@ -1,6 +1,6 @@
 var express = require('express');
 var path = require('path');
-var http=require('http');
+var http = require('http');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -10,6 +10,7 @@ var hostConfig = require('./host-config');
 var endServerUrl = hostConfig.endServer.url;
 
 var addPhoto = require('./routes/add-photo');
+var addMallShop = require('./routes/add-mall-shop');
 var app = express();
 var sessions = {};
 // view engine setup
@@ -17,7 +18,7 @@ app.set('views', __dirname);
 app.set('view engine', 'jade');
 
 //server
-var server=http.createServer(app);
+var server = http.createServer(app);
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -36,7 +37,7 @@ app.use(express['static'](__dirname, {
 //app.use(express.static(path.join(__dirname, 'public')));
 //路由
 app.use('/add-photo', addPhoto);
-
+app.use('/add-mall-shop', addMallShop);
 
 
 

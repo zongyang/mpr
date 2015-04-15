@@ -1,5 +1,5 @@
 define (require, exports, module) ->
-  require!  {util,'state', 'state/state-machine', 'data/data-binder', 'common/ui' }
+  require!  {util,'state', 'state/state-machine', 'data/data-binder', 'common/ui','../widget-util' }
 
   ui.create-widget {
     name:'add-photo'
@@ -46,6 +46,7 @@ define (require, exports, module) ->
             return console.log '浏览器不支持！'
 
         @file-input.change !~>
+            widget-util.modalShow('123','123');
             files=@file-input[0].files
             reg-str=/image\/\w+/
             
@@ -56,9 +57,17 @@ define (require, exports, module) ->
 
     add-up-btn-event:!->
         @up-btn.click !~>
+            mall=@mall-input.val!
+            shop=@shop-input.val!
+            address=@address-input.val!
+
             files=@file-input[0].files
             data=new FormData!
-
+            #地址
+            data.append 'mall',mall
+            data.append 'shop',shop
+            data.append 'address',address
+            #文件
             for i from 0 to files.length-1
                 data.append files[i].name,files[i]
 
