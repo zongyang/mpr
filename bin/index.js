@@ -68,7 +68,7 @@
     });
   }
   define(function(require, exports, module){
-    var jquery, semanticUi, state, stateMachine, middleWares, ui, appSpec, takePhoto, upPhoto, analysis, share, addPhoto, startAppStateMachine, observeAppState, activateWidgets;
+    var jquery, semanticUi, state, stateMachine, middleWares, ui, appSpec, takePhoto, upPhoto, analysis, share, addPhoto, selectMallShop, startAppStateMachine, observeAppState, activateWidgets;
     jquery = require('jquery');
     semanticUi = require('semantic-ui');
     state = require('state');
@@ -81,6 +81,7 @@
     analysis = require('widgets/analysis/analysis');
     share = require('widgets/share/share');
     addPhoto = require('widgets/add-photo/add-photo');
+    selectMallShop = require('widgets/select-mall-shop/select-mall-shop');
     startAppStateMachine = function(){
       var appStateMachine;
       appSpec.addStates();
@@ -90,7 +91,7 @@
       appStateMachine.addTransitions({
         spec: appSpec.transitions
       });
-      appStateMachine.start('add-photo');
+      appStateMachine.start('take-photo');
     };
     observeAppState = function(){
       var this$ = this;
@@ -102,6 +103,7 @@
       upPhoto.activate();
       share.activate();
       addPhoto.activate();
+      selectMallShop.activate();
     };
     return middleWares.activate(function(){
       console.log("\n\n*************** at-plus activated! ***************\n\n");

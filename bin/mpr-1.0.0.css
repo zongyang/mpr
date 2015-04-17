@@ -87,6 +87,12 @@
   #analysis .hidden {
     display: none; }
 
+#select-mall-shop.show {
+  display: block; }
+
+#select-mall-shop {
+  display: none; }
+
 #share.show {
   display: block; }
 

@@ -6,7 +6,7 @@
     state = require('state');
     ui = require('common/ui');
     return {
-      pages: ['take-photo', 'analysis', 'share', 'up-photo', 'add-photo'],
+      pages: ['take-photo', 'analysis', 'share', 'up-photo', 'select-mall-shop', 'add-photo'],
       addStates: function(){
         state.add({
           'select-finish': [true, false]
@@ -28,17 +28,13 @@
         'analysis       ->  take-photo': {
           'click': {
             hotArea: $('#analysis .footer .button.again'),
-            action: function(){
-              console.log('ana click');
-            }
+            action: function(){}
           }
         },
         'analysis       ->  share': {
           'click': {
             hotArea: $('#analysis .button.share'),
-            action: function(){
-              console.log('ana click');
-            }
+            action: function(){}
           }
         },
         'share          ->  analysis': {
@@ -52,6 +48,12 @@
             condition: function(upPhotoFinish){
               return upPhotoFinish === true;
             }
+          }
+        },
+        'select-mall-shop -> add-photo': {
+          'click': {
+            hotArea: $('#select-mall-shop .ok'),
+            action: function(){}
           }
         }
       }
