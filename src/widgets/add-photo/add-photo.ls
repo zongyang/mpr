@@ -46,7 +46,6 @@ define (require, exports, module) ->
             return console.log '浏览器不支持！'
 
         @file-input.change !~>
-            widget-util.modalShow('123','123');
             files=@file-input[0].files
             reg-str=/image\/\w+/
             

@@ -40,6 +40,7 @@ module.exports = (grunt) ->
             "bin/*"
             "!bin/vendor/*" # retain bower components
             "!bin/vendor/**" # retain bower components
+            "!bin/base_images/**" #上传的图片
             "dist"
             ".temp"
           ]

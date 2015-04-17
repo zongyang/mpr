@@ -1,0 +1,33 @@
+#add-photo.show {
+  display: block; }
+
+#add-photo {
+  display: none; }
+  #add-photo .body {
+    width: 600px;
+    margin: 10% auto 10%; }
+    #add-photo .body .scan-seg {
+      min-height: 120px; }
+      #add-photo .body .scan-seg .column {
+        cursor: pointer; }
+    #add-photo .body .address-seg {
+      margin: 15px 0 0 0; }
+    #add-photo .body .progress-seg {
+      margin: 15px 0 0 0; }
+    #add-photo .body .upload-seg {
+      margin-top: 15px;
+      position: relative; }
+      #add-photo .body .upload-seg .sel {
+        float: left;
+        width: 45%; }
+      #add-photo .body .upload-seg .up {
+        float: right;
+        width: 45%; }
+      #add-photo .body .upload-seg .clear {
+        clear: both; }
+      #add-photo .body .upload-seg .back-input {
+        position: absolute;
+        opacity: 0; }
+        #add-photo .body .upload-seg .back-input input {
+          cursor: pointer;
+          height: 36px; }

@@ -57,14 +57,15 @@ define (require, exports, module) ->
               widgets/up-photo/up-photo
               widgets/analysis/analysis
               widgets/share/share
-              widgets/add-photo/add-photo 
+              widgets/add-photo/add-photo
+              widgets/select-mall-shop/select-mall-shop  
             ]>
 
   start-app-state-machine = !->
     app-spec.add-states!
     app-state-machine = new state-machine "app-page": app-spec.pages 
     app-state-machine.add-transitions spec: app-spec.transitions
-    app-state-machine.start 'add-photo'
+    app-state-machine.start 'take-photo'
     
 
   observe-app-state =!->
@@ -77,6 +78,7 @@ define (require, exports, module) ->
     up-photo.activate!
     share.activate!
     add-photo.activate!
+    select-mall-shop.activate!
     #splash.activate!
     #top-bar.activate!
     # notification.activate!

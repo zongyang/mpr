@@ -1,0 +1,38 @@
+{
+  "name": "a-plus",
+  "main": "ui.js",
+  "location": "bin",
+  "version": "0.0.2",
+  "devDependencies": {},
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "@+",
+    "a+",
+    "A+"
+  ],
+  "license": "ATPLUS",
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "components/jquery#~2.1.1",
+    "jquery-debounce": "~1.0.5",
+    "requirejs": "~2.1.15"
+  },
+  "_release": "0.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.2",
+    "commit": "4b2ec17c504270125438995d870769215588cc92"
+  },
+  "_source": "git@222.200.181.218:rc-front/a-plus.git",
+  "_target": "*",
+  "_originalSource": "git@222.200.181.218:rc-front/a-plus.git"
+}
