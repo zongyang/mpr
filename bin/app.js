@@ -9,8 +9,10 @@ var socket = require('socket.io');
 var hostConfig = require('./host-config');
 var endServerUrl = hostConfig.endServer.url;
 
+var analysis=require('./routes/analysis');
 var addPhoto = require('./routes/add-photo');
-var addMallShop = require('./routes/add-mall-shop');
+var selectMallShop = require('./routes/select-mall-shop');
+
 var app = express();
 var sessions = {};
 // view engine setup
@@ -36,7 +38,8 @@ app.use(express['static'](__dirname, {
 
 //app.use(express.static(path.join(__dirname, 'public')));
 //路由
-app.use('/analysis', addMallShop);
+app.use('/analysis',analysis);
+app.use('/select-mall-shop', selectMallShop);
 app.use('/add-photo', addPhoto);
 
 

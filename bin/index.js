@@ -53,6 +53,16 @@
           name: 'a-plus',
           main: 'ui.js',
           location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
+        },
+        {
+          name: 'a-plus',
+          main: 'ui.js',
+          location: 'vendor/a-plus/bin'
         }
       ],
       paths: {
@@ -91,7 +101,7 @@
       appStateMachine.addTransitions({
         spec: appSpec.transitions
       });
-      appStateMachine.start('take-photo');
+      appStateMachine.start('select-mall-shop');
     };
     observeAppState = function(){
       var this$ = this;

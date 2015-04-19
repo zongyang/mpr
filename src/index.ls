@@ -65,7 +65,7 @@ define (require, exports, module) ->
     app-spec.add-states!
     app-state-machine = new state-machine "app-page": app-spec.pages 
     app-state-machine.add-transitions spec: app-spec.transitions
-    app-state-machine.start 'take-photo'
+    app-state-machine.start 'select-mall-shop'
     
 
   observe-app-state =!->

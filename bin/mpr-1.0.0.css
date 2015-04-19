@@ -92,6 +92,9 @@
 
 #select-mall-shop {
   display: none; }
+  #select-mall-shop .body {
+    width: 600px;
+    margin: 10% auto 10%; }
 
 #share.show {
   display: block; }

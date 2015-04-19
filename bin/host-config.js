@@ -5,12 +5,12 @@
     isUsingMediateServer: false,
     isReverseProxy: false,
     scheme: "http",
-    name: "localhost",
+    name: "192.168.253.2",
     port: 3000,
     path: ".",
     livereload: 3001,
     endServer: {
-      url: 'http://localhost:3000'
+      url: 'http://192.168.253.2:3000'
     },
     lbs: {
       provider: 'baidu',
