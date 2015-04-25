@@ -1,6 +1,22 @@
 var getPixels = require("get-pixels");
 
 module.exports = {
+	isNull: function() {
+		var len = arguments.length;
+		var str;
+		for (var i = 0; i < len; i++) {
+			str = arguments[i];
+
+			if (str === null)
+				return true;
+			if (str.trim() === '')
+				return true;
+
+		}
+
+		return false
+
+	},
 	//获得图片的rgb值
 	getRgba: function(url, callback, alpha) {
 		getPixels(url, function(err, pixels) {
@@ -30,7 +46,7 @@ module.exports = {
 		})
 	},
 	//获得与图片最相近的三个结果
-	getSimilarities: function(data,mall) {
+	getSimilarities: function(data, mall) {
 		mall = (!mall) ? mall : '正佳';
 		return [{
 			url: 'base_images/1429163885276.jpg',

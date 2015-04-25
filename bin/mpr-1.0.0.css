@@ -93,8 +93,15 @@
 #select-mall-shop {
   display: none; }
   #select-mall-shop .body {
-    width: 600px;
+    width: 650px;
     margin: 10% auto 10%; }
+    #select-mall-shop .body .ui.search {
+      margin-bottom: 15px; }
+    #select-mall-shop .body .row.mall, #select-mall-shop .body .row.shop {
+      line-height: 37px;
+      margin-bottom: 15px; }
+    #select-mall-shop .body .notfound a {
+      cursor: pointer; }
 
 #share.show {
   display: block; }

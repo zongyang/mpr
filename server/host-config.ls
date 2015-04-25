@@ -43,7 +43,6 @@ host =
 host.origin = host.scheme + '://' + host.name + (if host.port then ":" + host.port else '') + (if host.path then "/" + host.path else '')
 host.port = 80 if not host.port
   
-  
 
 if typeof window is 'undefined' # for server CommonJS environment
   module.exports = exports = host

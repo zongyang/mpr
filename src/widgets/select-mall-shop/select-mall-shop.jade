@@ -1,13 +1,56 @@
+mixin add-mall-shop-modal(text,cls)
+	.ui.modal(class=cls)
+		i.close.icon
+		.header
+			p.title 添加新的#{text}
+		.content.ui.form
+			.field.name
+				input(type='text',placeholder='输入#{text}名')
+			.field.address
+				input(type='text',placeholder='输入#{text}地址')
+		.actions
+			.ui.positive.button 确定
+			.ui.negative.button 取消
+
 #select-mall-shop
+	+add-mall-shop-modal('商场','mall')
+	+add-mall-shop-modal('店铺','shop')
 	.ui.two.column.grid.body
 		.column
-			.ui.search
-				.ui.input
-					input.prompt(type='text')
+			.ui.search.mall
+				.ui.input.fluid
+					input.prompt(type='text',placeholder='输入商场名')
+					.id.hidden
 				.results
+			.ui.search.shop
+				.ui.input.fluid
+					input.prompt(type='text',placeholder='输入店铺名')
+					.id.hidden
+				.results
+			.ui.button.fluid.positive.ok 确定
 		.column
-				
-
+			.row.mall.ok.hidden
+				i.check.circle.icon.green.hidden
+				span.content 已选择商场
+			.row.mall.notfound.hidden
+				i.warning.icon.yellow.hidden
+				span.content 没有找到该商场，是否需要 <a>添加</a> 新的商场
+			.row.mall.invalid.hidden
+				i.remove.circle.icon.red
+				span.content 没有选择商场
+			.row.mall.add.hidden
+				i.add.circle.icon.green
+				span.content 添加了新的商场
+//
+			.row.shop.ok
+				i.check.circle.icon.green
+				span.content 已选择店铺
+			.row.shop.invalid.hidden
+				i.remove.circle.icon.red
+				span.content 没有选择店铺
+			.row.shop.add.hidden
+				i.add.circle.icon.green
+				span.content 添加了新的店铺
 //
 	input(type='text' placeholder='商场名')
 	input(type='text' placeholder='商场位置' )

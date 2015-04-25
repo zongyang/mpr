@@ -3,20 +3,27 @@ var multer = require('multer');
 var router = express.Router();
 var path = require('path');
 var fs = require('fs');
+var cv = require('opencv');
+
 var serverUtil = require('../server-util.js');
 var Photo = require('../model/photo.js');
 
 
 //test
 router.get('/', function(req, res, next) {
-	serverUtil.getRgba('base_images/1429163885276.jpg', function(err, data) {
+	//var dir = path.resolve(__dirname, '../base_images/1429163885276.jpg');
+	var dir = 'base_images/1429163885276.jpg';
+	fs.readFile(dir, function(err, data) {
 		if (err) {
 			res.send(err);
 			return;
 		}
-		res.send(data);
-	});
+		cv.readImage(data, function(err, mat) {
+			debugger;
 
+			res.send(mat);
+		});
+	})
 
 });
 

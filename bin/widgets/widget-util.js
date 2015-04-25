@@ -12,6 +12,39 @@
         m.find('.header p').text(title);
         m.find('.content p').text(info);
         m.modal('show');
+      },
+      changTips: function(cls, type){
+        var all, self;
+        all = $('#select-mall-shop .row.' + cls);
+        self = all.filter('.' + type).removeClass('hidden');
+        self.siblings().addClass('hidden');
+      },
+      addCheck: function(cls){
+        var modal, name, address;
+        modal = $('.ui.moadl.' + cls);
+        name = modal.find('.name input').val();
+        address = modal.find('.address input').val();
+        if (!name) {
+          modal.find('.name').addClass('error');
+          return false;
+        }
+        if (!address) {
+          modal.find('.address').addClass('error');
+          return false;
+        }
+        return true;
+      },
+      addMallModalShow: function(){
+        var m;
+        m = $('.ui.modal.mall');
+        m.find('.name,.address').removeClass('error');
+        m.find('.name,.address input').val('');
+        m.modal('show');
+      },
+      addShopModalShow: function(){
+        var m;
+        m = $('.ui.modal.shop');
+        m.modal('show');
       }
     };
   });
